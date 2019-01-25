@@ -31,10 +31,6 @@ lines(data$midpoint[data$scaffold==scaffold.name],
 
 }
 
-
- 
-
-
 ### Heatmap 
 loh<-read.table("LOH.ramorum1.csv", header=T)
 attach(loh)
@@ -86,17 +82,4 @@ plot(strain1$V2[strain1$V1==scaffold], strain1$V4[strain1$V1==scaffold]/10, type
 lines(strain2$V2[strain2$V1==scaffold], strain2$V4[strain2$V1==scaffold]/10, type='l',  col='purple', lwd=3    )
 
 dev.off()
-
-
-#12475.versus.EU1.scaffolds.fna.masked.rmdup.pileup.csv   CC2186.versus.EU1.scaffolds.fna.masked.rmdup.pileup.csv
-#14654.versus.EU1.scaffolds.fna.masked.rmdup.pileup.csv   CC2187.versus.EU1.scaffolds.fna.masked.rmdup.pileup.csv
-#2184.versus.EU1.scaffolds.fna.masked.rmdup.pileup.csv    EU2_996_3.versus.EU1.scaffolds.fna.masked.rmdup.pileup.csv
-#2275.versus.EU1.scaffolds.fna.masked.rmdup.pileup.csv    SOD_136_11_AGTCAA_L008_.versus.EU1.scaffolds.fna.masked.rmdup.pileup.csv
-#CC1008.versus.EU1.scaffolds.fna.masked.rmdup.pileup.csv  SOD_158_11_GTCCGC_L008_.versus.EU1.scaffolds.fna.masked.rmdup.pileup.csv
-#CC1011.versus.EU1.scaffolds.fna.masked.rmdup.pileup.csv  SOD_169_11_AGTTCC_L008_.versus.EU1.scaffolds.fna.masked.rmdup.pileup.csv
-#CC1033.versus.EU1.scaffolds.fna.masked.rmdup.pileup.csv  SOD_22_12_GTAGAG_L008_.versus.EU1.scaffolds.fna.masked.rmdup.pileup.csv
-#CC1048.versus.EU1.scaffolds.fna.masked.rmdup.pileup.csv  SOD_58_12_ATGTCA_L008_.versus.EU1.scaffolds.fna.masked.rmdup.pileup.csv
-#CC2168.versus.EU1.scaffolds.fna.masked.rmdup.pileup.csv  SOD_69_12_GGCTAC_L008_.versus.EU1.scaffolds.fna.masked.rmdup.pileup.csv
-#CC2176.versus.EU1.scaffolds.fna.masked.rmdup.pileup.csv  SOD_L51_CCGTCC_L008_.versus.EU1.scaffolds.fna.masked.rmdup.pileup.csv
-
 

@@ -46,18 +46,9 @@ pheatmap(x, col=hmcol, display_numbers=T, fontsiz_row=6, fontsize_col=24, cellhe
 dev.off()
 
 
-
-
-
-
-
-
 ### Plot depths and heterozygosities for a pair of strains for each scaffold
-
 strain1<-read.table("2275.versus.ramorum1.fasta.masked.rmdup.pileup.csv", header=F)
 strain2<-read.table("CC1011.versus.ramorum1.fasta.masked.rmdup.pileup.csv", header=F)
-
-
 
 scaffold <- 'scaffold_7'
 
@@ -82,4 +73,3 @@ plot(strain1$V2[strain1$V1==scaffold], strain1$V4[strain1$V1==scaffold]/10, type
 lines(strain2$V2[strain2$V1==scaffold], strain2$V4[strain2$V1==scaffold]/10, type='l',  col='purple', lwd=3    )
 
 dev.off()
-
